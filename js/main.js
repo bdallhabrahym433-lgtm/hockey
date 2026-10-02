@@ -49,3 +49,19 @@ document.addEventListener(
 
     }
 );
+// اختبار الاتصال بـ Supabase
+async function testSupabaseConnection() {
+    const { data, error } = await supabaseClient
+        .from('site_settings')
+        .select('site_name')
+        .limit(1);
+
+    if (error) {
+        console.error('خطأ في الاتصال بـ Supabase:', error.message);
+        return;
+    }
+
+    console.log('تم الاتصال بـ Supabase بنجاح!', data);
+}
+
+testSupabaseConnection();

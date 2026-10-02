@@ -1,0 +1,110 @@
+/* =========================================================
+   HOCKEY FEDERATION
+   DESIGN VARIABLES
+========================================================= */
+
+:root {
+
+    /* =========================
+       Brand Colors
+    ========================== */
+
+    --color-navy: #071A2B;
+    --color-blue: #00AEEF;
+    --color-green: #19A974;
+    --color-gold: #D9A441;
+
+
+    /* =========================
+       Background Colors
+    ========================== */
+
+    --color-background: #F5F8FA;
+    --color-white: #FFFFFF;
+    --color-card: #FFFFFF;
+    --color-dark: #071A2B;
+
+
+    /* =========================
+       Text Colors
+    ========================== */
+
+    --color-text: #17212B;
+    --color-text-light: #667085;
+    --color-text-white: #FFFFFF;
+
+
+    /* =========================
+       Border
+    ========================== */
+
+    --color-border: #E4E7EC;
+
+
+    /* =========================
+       Typography
+    ========================== */
+
+    --font-family: "Cairo", sans-serif;
+
+    --font-size-small: 13px;
+    --font-size-body: 16px;
+    --font-size-large: 20px;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+
+    /* =========================
+       Layout
+    ========================== */
+
+    --container-width: 1200px;
+
+    --section-padding-desktop: 90px;
+    --section-padding-tablet: 70px;
+    --section-padding-mobile: 50px;
+
+
+    /* =========================
+       Border Radius
+    ========================== */
+
+    --radius-small: 8px;
+    --radius-medium: 16px;
+    --radius-large: 24px;
+    --radius-round: 999px;
+
+
+    /* =========================
+       Shadows
+    ========================== */
+
+    --shadow-small:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+
+    --shadow-medium:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+
+    --shadow-large:
+        0 20px 50px rgba(0, 0, 0, 0.14);
+
+
+    /* =========================
+       Transitions
+    ========================== */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+
+    /* =========================
+       Z Index
+    ========================== */
+
+    --z-header: 1000;
+    --z-menu: 1100;
+}

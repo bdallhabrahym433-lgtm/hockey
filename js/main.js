@@ -13,13 +13,15 @@ document.addEventListener(
         if (typeof initNavigation === "function") {
             initNavigation();
         }
-       /* =========================
-          Load News from Supabase
-       ========================== */
+
+
+        /* =========================
+           Load News from Supabase
+        ========================== */
 
         if (typeof loadNews === "function") {
             loadNews();
-       }
+        }
 
 
         /* =========================
@@ -56,19 +58,36 @@ document.addEventListener(
 
     }
 );
-// اختبار الاتصال بـ Supabase
+
+
+/* =========================================================
+   SUPABASE CONNECTION TEST
+========================================================= */
+
 async function testSupabaseConnection() {
+
     const { data, error } = await supabaseClient
-        .from('site_settings')
-        .select('site_name')
+        .from("site_settings")
+        .select("site_name")
         .limit(1);
 
+
     if (error) {
-        console.error('خطأ في الاتصال بـ Supabase:', error.message);
+
+        console.error(
+            "خطأ في الاتصال بـ Supabase:",
+            error.message
+        );
+
         return;
     }
 
-    console.log('تم الاتصال بـ Supabase بنجاح!', data);
+
+    console.log(
+        "تم الاتصال بـ Supabase بنجاح!",
+        data
+    );
 }
+
 
 testSupabaseConnection();

@@ -13,6 +13,13 @@ document.addEventListener(
         if (typeof initNavigation === "function") {
             initNavigation();
         }
+       /* =========================
+          Load News from Supabase
+       ========================== */
+
+        if (typeof loadNews === "function") {
+            loadNews();
+       }
 
 
         /* =========================
